@@ -1,9 +1,28 @@
-import './App.css';
+import './App.scss';
+// import { NavLink } from "react-router-dom";
+import Content from './Components/Content/Content';
+import Counter from './Components/Progects/Counter/Counter';
+import Sidebar from './Components/Sidebar/Sidebar';
 
 function App() {
   return (
     <div className="App">
-      я React
+      <div className="main_content">
+        <div className="pogects">
+        <Counter />
+        </div>
+        <div className="right_sidebar">
+          <div className="menu">
+            <ul>
+              {/* <li><NavLink to="">проект 1</NavLink></li> */}
+              <li>проект 2</li>
+              <li>проект 3</li>
+              <li>проект 4</li>
+              <li>проект 5</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,18 @@
+.main_content {
+    margin: 0 auto;
+    width: 1200px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.pogects{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    // background-color: #acc;
+}
+.right_sidebar{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    border-left: 2px solid #ccc;
+    // background-color: bisque;
+}
