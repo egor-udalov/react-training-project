@@ -1,10 +1,12 @@
 import './App.scss';
 // import { NavLink } from "react-router-dom";
 import Content from './Components/Content/Content';
+import Sidebar from './Components/Sidebar/Sidebar';
 import Counter from './Components/Progects/Counter/Counter';
 import CurrencyConvertor from './Components/Progects/CurrencyConvertor/CurrencyConvertor';
 import Photos from './Components/Progects/Photos/Photos';
-import Sidebar from './Components/Sidebar/Sidebar';
+import Invitations from './Components/Progects/Invitations/Invitations';
+
 
 function App() {
   return (
@@ -13,7 +15,8 @@ function App() {
         <div className="pogects">
           {/* <Counter /> */}
           {/* <Photos /> */}
-          <CurrencyConvertor />
+          {/* <CurrencyConvertor /> */}
+          {/* <Invitations /> */}
         </div>
         <div className="right_sidebar">
           <div className="menu">
