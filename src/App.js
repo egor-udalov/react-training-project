@@ -6,6 +6,7 @@ import Counter from './Components/Progects/Counter/Counter';
 import CurrencyConvertor from './Components/Progects/CurrencyConvertor/CurrencyConvertor';
 import Photos from './Components/Progects/Photos/Photos';
 import Invitations from './Components/Progects/Invitations/Invitations';
+import Quiz from './Components/Progects/Quiz/Quiz';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           {/* <Photos /> */}
           {/* <CurrencyConvertor /> */}
           {/* <Invitations /> */}
+          {/* <Quiz /> */}
         </div>
         <div className="right_sidebar">
           <div className="menu">
