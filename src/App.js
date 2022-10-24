@@ -8,6 +8,7 @@ import CurrencyConvertor from './Components/Progects/CurrencyConvertor/CurrencyC
 import Photos from './Components/Progects/Photos/Photos';
 import Invitations from './Components/Progects/Invitations/Invitations';
 import Quiz from './Components/Progects/Quiz/Quiz';
+import Modal from './Components/Progects/Modal/Modal';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path="CurrencyConvertor" element={<CurrencyConvertor />} />
             <Route path="Invitations" element={<Invitations />} />
             <Route path="Quiz" element={<Quiz />} />
+            <Route path="Modal" element={<Modal />} />
           </Routes>
         </div>
         <div className="right_sidebar">
@@ -31,6 +33,7 @@ function App() {
               <li><NavLink to="CurrencyConvertor">CurrencyConvertor</NavLink></li>
               <li><NavLink to="Invitations">Invitations</NavLink></li>
               <li><NavLink to="Quiz">Quiz</NavLink></li>
+              <li><NavLink to="Modal">Modal</NavLink></li>
             </ul>
           </div>
         </div>
