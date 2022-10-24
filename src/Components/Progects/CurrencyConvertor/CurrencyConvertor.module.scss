@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
 .CurrencyConvertor {
+  width: 100%;
+  max-width: 1200px;
+  height: 100vh;
+}
+
+.convertor_blocks {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 30px;
@@ -10,10 +16,7 @@
   padding: 30px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
   border-radius: 15px;
-  background-color: #f9f2ed;
-  font-family: 'Inter', system-ui !important;
   box-sizing: border-box;
-  user-select: none;
 }
 
 .block {
@@ -29,7 +32,6 @@
     width: 100%;
     font-family: 'Inter', system-ui !important;
     box-sizing: border-box;
-    user-select: none;
   }
 }
 
@@ -41,9 +43,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   overflow: hidden;
-  font-family: 'Inter', system-ui !important;
   box-sizing: border-box;
-  user-select: none;
 
   li {
     display: inline-flex;
@@ -52,6 +52,8 @@
     cursor: pointer;
     justify-content: center;
     flex: 1;
+    font-family: 'Inter', system-ui !important;
+    box-sizing: border-box;
 
     &:hover {
       background-color: rgba(0, 0, 0, 0.03);

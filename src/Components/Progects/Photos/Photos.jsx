@@ -39,50 +39,52 @@ function Photos() {
 
   return (
     <div className={Styles.Photos}>
-      <h1>Моя коллекция фотографий</h1>
-      <div className={Styles.top}>
-        <ul className={Styles.tags}>
+      <div className={Styles.wrapper}>
+        <h1>Моя коллекция фотографий</h1>
+        <div className={Styles.top}>
+          <ul className={Styles.tags}>
+            {
+              cats.map((obj, i) => (
+                <li
+                  onClick={() => setCategoryId(i)}
+                  className={categoryId == i ? `${Styles.active}` : ''}
+                  key={obj.name}
+                >
+                  {obj.name}
+                </li>
+              ))
+            }
+          </ul>
+          <input
+            value={searchValue}
+            onChange={e => setSearchValue(e.target.value)}
+            className={Styles.search_input}
+            placeholder="Поиск по названию"
+          />
+        </div>
+        <div className={Styles.content}>
           {
-            cats.map((obj, i) => (
-              <li
-                onClick={() => setCategoryId(i)}
-                className={categoryId == i ? `${Styles.active}` : ''}
-                key={obj.name}
-              >
-                {obj.name}
+            isLoading ? (
+              <h3>Идёт загрузка ...</h3>
+            ) : (
+              collections.filter(obj => obj.name.toLowerCase().includes(searchValue.toLowerCase()))
+                .map((obj, index) => (
+                  <Collection key={index} name={obj.name} images={obj.photos} />
+                ))
+            )
+          }
+
+        </div>
+        <ul className={Styles.pagination}>
+          {
+            [...Array(5)].map((_, i) => (
+              <li onClick={() => setPage(i + 1)} className={page == i + 1 ? `${Styles.active}` : ''}>
+                {i + 1}
               </li>
             ))
           }
         </ul>
-        <input
-          value={searchValue}
-          onChange={e => setSearchValue(e.target.value)}
-          className={Styles.search_input}
-          placeholder="Поиск по названию"
-        />
       </div>
-      <div className={Styles.content}>
-        {
-          isLoading ? (
-            <h3>Идёт загрузка ...</h3>
-          ) : (
-            collections.filter(obj => obj.name.toLowerCase().includes(searchValue.toLowerCase()))
-              .map((obj, index) => (
-                <Collection key={index} name={obj.name} images={obj.photos} />
-              ))
-          )
-        }
-
-      </div>
-      <ul className={Styles.pagination}>
-        {
-          [...Array(5)].map((_, i) => (
-            <li onClick={() => setPage(i + 1)} className={page == i + 1 ? `${Styles.active}` : ''}>
-              {i + 1}
-            </li>
-          ))
-        }
-      </ul>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import './App.scss';
-// import { NavLink } from "react-router-dom";
+import React from 'react';
+import { NavLink, Route, Routes } from "react-router-dom";
 import Content from './Components/Content/Content';
 import Sidebar from './Components/Sidebar/Sidebar';
 import Counter from './Components/Progects/Counter/Counter';
@@ -14,20 +15,22 @@ function App() {
     <div className="App">
       <div className="main_content">
         <div className="pogects">
-          {/* <Counter /> */}
-          {/* <Photos /> */}
-          {/* <CurrencyConvertor /> */}
-          {/* <Invitations /> */}
-          {/* <Quiz /> */}
+          <Routes>
+            <Route path="Counter" element={<Counter />} />
+            <Route path="Photos" element={<Photos />} />
+            <Route path="CurrencyConvertor" element={<CurrencyConvertor />} />
+            <Route path="Invitations" element={<Invitations />} />
+            <Route path="Quiz" element={<Quiz />} />
+          </Routes>
         </div>
         <div className="right_sidebar">
           <div className="menu">
             <ul>
-              {/* <li><NavLink to="">проект 1</NavLink></li> */}
-              <li>проект 2</li>
-              <li>проект 3</li>
-              <li>проект 4</li>
-              <li>проект 5</li>
+              <li><NavLink to="Counter">Counter</NavLink></li>
+              <li><NavLink to="Photos">Photos</NavLink></li>
+              <li><NavLink to="CurrencyConvertor">CurrencyConvertor</NavLink></li>
+              <li><NavLink to="Invitations">Invitations</NavLink></li>
+              <li><NavLink to="Quiz">Quiz</NavLink></li>
             </ul>
           </div>
         </div>

@@ -1,24 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
 
-
-* {
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
-  outline: none;
+.Invitations {
+  width: 100%;
+  max-width: 1200px;
+  height: 100vh;
 }
 
-.Invitations {
+.wrapper {
   width: 400px;
   height: 600px;
-  margin: 50px auto;
+  margin: 0 auto;
   background-color: #fff;
   border-radius: 30px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   padding: 40px;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
-  outline: none;
 }
 
 .search {
@@ -57,7 +54,7 @@
     justify-content: space-between;
     margin-bottom: 15px;
 
-    & > div {
+    &>div {
       display: flex;
     }
 
@@ -87,6 +84,7 @@
       margin-top: 5px;
       margin-left: 0;
       color: #182170;
+      font-family: 'Inter', sans-serif;
     }
 
     p {
@@ -96,6 +94,7 @@
       margin: 0;
       color: rgba(0, 0, 0, 0.5);
       margin-top: 3px;
+      font-family: 'Inter', sans-serif;
 
       svg {
         width: 16px;
@@ -150,11 +149,13 @@
     font-size: 24px;
     margin-bottom: 0;
     margin-top: 10px;
+    font-family: 'Inter', sans-serif;
   }
 
   p {
     text-align: center;
     margin-bottom: 30px;
+    font-family: 'Inter', sans-serif;
   }
 
   button {
@@ -171,7 +172,7 @@
   }
 }
 
-@keyframes success-show {
+@keyframes success_show {
   0% {
     opacity: 0;
     transform: scale(0.8);

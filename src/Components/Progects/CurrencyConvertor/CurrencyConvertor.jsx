@@ -45,18 +45,20 @@ function CurrencyConvertor() {
 
   return (
     <div className={Styles.CurrencyConvertor}>
-      <Block
-        value={fromPrice}
-        currency={fromCurrency}
-        onChangeCurrency={setFromCurrency}
-        onChangeValue={onChangeFromPrice}
-      />
-      <Block
-        value={toPrice}
-        currency={toCurrency}
-        onChangeCurrency={setToCurrency}
-        onChangeValue={onChangeToPrice}
-      />
+      <div className={Styles.convertor_blocks}>
+          <Block
+            value={fromPrice}
+            currency={fromCurrency}
+            onChangeCurrency={setFromCurrency}
+            onChangeValue={onChangeFromPrice}
+          />
+          <Block
+            value={toPrice}
+            currency={toCurrency}
+            onChangeCurrency={setToCurrency}
+            onChangeValue={onChangeToPrice}
+          />
+      </div>
     </div>
   );
 }

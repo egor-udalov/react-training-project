@@ -1,5 +1,5 @@
 import React from 'react';
-import Styles from'./Invitations.module.scss';
+import Styles from './Invitations.module.scss';
 import { Success } from './InvitationsComponents/Success';
 import { Users } from './InvitationsComponents/Users';
 
@@ -42,21 +42,24 @@ function Invitations() {
 
   return (
     <div className={Styles.Invitations}>
-      {
-        success ? (
-          <Success count={invites.length} />
-        ) : (
-          <Users
-            onChangeSearchValue={onChangeSearchValue}
-            searchValue={searchValue}
-            items={users}
-            isLoading={isLoading}
-            invites={invites}
-            onClickInvite={onClickInvite}
-            onClickSendInvites={onClickSendInvites}
-          />
-        )
-      }
+      <div className={Styles.wrapper}>
+        {
+          success ? (
+            <Success count={invites.length} />
+          ) : (
+            <Users
+              onChangeSearchValue={onChangeSearchValue}
+              searchValue={searchValue}
+              items={users}
+              isLoading={isLoading}
+              invites={invites}
+              onClickInvite={onClickInvite}
+              onClickSendInvites={onClickSendInvites}
+            />
+          )
+        }
+      </div>
+
     </div>
   );
 }

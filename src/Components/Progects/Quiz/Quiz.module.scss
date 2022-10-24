@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap');
 
-.wrapper {
+.Quiz {
   margin: 0;
   font-family: 'Nunito', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #6a5be2;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
 }
 
-.Quiz {
+.wrapper {
   width: 500px;
   border-radius: 30px;
   padding: 40px;

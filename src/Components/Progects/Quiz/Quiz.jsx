@@ -29,7 +29,7 @@ function Result({ correct }) {
     <div className={Styles.result}>
       <img src="https://cdn-icons-png.flaticon.com/512/2278/2278992.png" />
       <h2>Вы отгадали {correct} ответа из {questions.length}</h2>
-      <a href='/'>
+      <a href='/Quiz'>
         <button>Попробовать снова</button>
       </a>
     </div>
@@ -70,8 +70,8 @@ function Quiz() {
   }
 
   return (
-    <div className={Styles.wrapper}>
-      <div className={Styles.Quiz}>
+    <div className={Styles.Quiz}>
+      <div className={Styles.wrapper}>
         {
           step !== questions.length ? (
             <Game step={step} question={question} onClickVariant={onClickVariant} />
