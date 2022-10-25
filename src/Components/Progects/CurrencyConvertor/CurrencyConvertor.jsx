@@ -47,18 +47,18 @@ function CurrencyConvertor() {
     <div className={Styles.CurrencyConvertor}>
       <h3>Конвертер валют</h3>
       <div className={Styles.convertor_blocks}>
-          <Block
-            value={fromPrice}
-            currency={fromCurrency}
-            onChangeCurrency={setFromCurrency}
-            onChangeValue={onChangeFromPrice}
-          />
-          <Block
-            value={toPrice}
-            currency={toCurrency}
-            onChangeCurrency={setToCurrency}
-            onChangeValue={onChangeToPrice}
-          />
+        <Block
+          value={fromPrice}
+          currency={fromCurrency}
+          onChangeCurrency={setFromCurrency}
+          onChangeValue={onChangeFromPrice}
+        />
+        <Block
+          value={toPrice}
+          currency={toCurrency}
+          onChangeCurrency={setToCurrency}
+          onChangeValue={onChangeToPrice}
+        />
       </div>
     </div>
   );
