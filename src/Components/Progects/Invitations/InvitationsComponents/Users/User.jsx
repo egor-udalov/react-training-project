@@ -1,5 +1,5 @@
 import React from 'react';
-import Styles from'../../Invitations.module.scss';
+import Styles from '../../Invitations.module.scss';
 
 export const User = ({ id, email, first_name, last_name, avatar, onClickInvite, isInvited }) => (
   <li>
@@ -15,6 +15,10 @@ export const User = ({ id, email, first_name, last_name, avatar, onClickInvite, 
         </p>
       </div>
     </div>
-    <img onClick={() => onClickInvite(id)} className={Styles.action} src={`/assets/${isInvited ? 'minus' : 'plus'}.svg`} alt="Action" />
+    <img
+      onClick={() => onClickInvite(id)}
+      className={Styles.action}
+      src={`/assets/${isInvited ? 'minus' : 'plus'}.svg`}
+      alt="Action" />
   </li>
 );

@@ -8,8 +8,8 @@ import { Users } from './InvitationsComponents/Users';
 function Invitations() {
   const [users, setUsers] = React.useState([]);
   const [invites, setInvites] = React.useState([]);
-  const [isLoading, setLoading] = React.useState([true]);
-  const [success, setSuccess] = React.useState([false]);
+  const [isLoading, setLoading] = React.useState(true);
+  const [success, setSuccess] = React.useState(false);
   const [searchValue, setSearchValue] = React.useState('');
 
   React.useEffect(() => {
@@ -20,17 +20,18 @@ function Invitations() {
       })
       .catch(err => {
         console.warn(err);
-        alert('Ошибка при получении пользователя')
-      }).finally(() => setLoading(false));
+        alert('Ошибка при получении пользователя');
+      })
+      .finally(() => setLoading(false));
   }, []);
 
   const onChangeSearchValue = (event) => {
     setSearchValue(event.target.value);
-  }
+  };
 
   const onClickInvite = (id) => {
     if (invites.includes(id)) {
-      setInvites(prev => prev.filter(_id => _id !== id));
+      setInvites((prev) => prev.filter((_id) => _id !== id));
     } else {
       setInvites((prev) => [...prev, id]);
     }
@@ -43,8 +44,7 @@ function Invitations() {
   return (
     <div className={Styles.Invitations}>
       <div className={Styles.wrapper}>
-        {
-          success ? (
+        {success ? (
             <Success count={invites.length} />
           ) : (
             <Users
@@ -56,10 +56,8 @@ function Invitations() {
               onClickInvite={onClickInvite}
               onClickSendInvites={onClickSendInvites}
             />
-          )
-        }
+          )}
       </div>
-
     </div>
   );
 }
