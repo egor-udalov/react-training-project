@@ -45,6 +45,7 @@ function CurrencyConvertor() {
 
   return (
     <div className={Styles.CurrencyConvertor}>
+      <h3>Конвертер валют</h3>
       <div className={Styles.convertor_blocks}>
           <Block
             value={fromPrice}
