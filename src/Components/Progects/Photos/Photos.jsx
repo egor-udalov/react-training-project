@@ -25,7 +25,7 @@ function Photos() {
     const category = categoryId ? `category=${categoryId}` : '';
 
     fetch(
-      `https://634e6075f34e1ed8268a056d.mockapi.io/photo_collections?page=${page}&limit=3${category}`,
+      `https://634e6075f34e1ed8268a056d.mockapi.io/photo_collections?page=${page}&limit=3&${category}`,
     )
       .then((res) => res.json())
       .then((json) => {
@@ -34,7 +34,8 @@ function Photos() {
       .catch((err) => {
         console.warn(err);
         alert('Ошибка при получении данных');
-      }).finally(() => setIsLoading(false));
+      })
+      .finally(() => setIsLoading(false));
   }, [categoryId, page]);
 
   return (
@@ -67,7 +68,8 @@ function Photos() {
             isLoading ? (
               <h3>Идёт загрузка ...</h3>
             ) : (
-              collections.filter(obj => obj.name.toLowerCase().includes(searchValue.toLowerCase()))
+              collections
+                .filter(obj => obj.name.toLowerCase().includes(searchValue.toLowerCase()))
                 .map((obj, index) => (
                   <Collection key={index} name={obj.name} images={obj.photos} />
                 ))
