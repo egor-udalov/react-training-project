@@ -32,12 +32,13 @@
                 font-weight: 500;
                 font-size: 18px;
                 padding: 9px 0;
-                
-                // &.active {
-                //     background-color: #000;
-                //     color: #fff;
-                //   }
             }
         }
+    }
+
+    .active_link {
+        background-color: #000;
+        border-radius: 10px;
+        color: #fff;
     }
 }
