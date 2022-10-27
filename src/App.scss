@@ -17,41 +17,4 @@
     grid-column-end: 6;
     border-left: 3px solid #fff;
     background-color: #edf6f9;
-
-    ul {
-        margin: 0 auto;
-        padding: 0;
-
-        li {
-            list-style: none;
-            text-align: center;
-            margin: 40px 0;
-
-            a {
-                color: #000;
-                text-decoration: none;
-                background: #fff;
-                padding: 9px 12px;
-                border-radius: 10px;
-                font-weight: 500;
-                border: 0;
-                outline: none;
-                font-size: 18px;
-                cursor: pointer;
-                line-height: 23px;
-                box-shadow: 0 3px 5px rgb(0 0 0 / 10%);
-                transition: all 0.1s ease-in-out;
-
-                &:hover {
-                    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
-                    transform: translateY(-1px);
-                }
-
-                &:active {
-                    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-                    transform: translateY(0);
-                }
-            }
-        }
-    }
 }
