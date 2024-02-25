@@ -1,6 +1,3 @@
-# set-react-little-projects Проекты на ReactJS 
-
-
 ## Счётчик
 ![counter130351](https://user-images.githubusercontent.com/98544806/198256933-61aab844-81c4-48d2-aa85-4667bc108795.png)
 
