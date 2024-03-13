@@ -1,6 +1,3 @@
-## Счётчик
-![counter130351](https://user-images.githubusercontent.com/98544806/198256933-61aab844-81c4-48d2-aa85-4667bc108795.png)
-
 ## Коллекция фотографий
 ![photos130433](https://user-images.githubusercontent.com/98544806/198257263-e643755b-1bce-4afa-a781-ceb8bf80b40c.png)
 
@@ -12,6 +9,9 @@
 
 ## Quiz (опросник)
 ![quiz130719](https://user-images.githubusercontent.com/98544806/198257131-21660824-a090-4a0a-996d-65abd0fe22d9.png)
+
+## Счётчик
+![counter130351](https://user-images.githubusercontent.com/98544806/198256933-61aab844-81c4-48d2-aa85-4667bc108795.png)
 
 ## Модальное окно
 ![modal130751](https://user-images.githubusercontent.com/98544806/198257068-4e6b66b3-6bfc-49bd-b197-2c5f7382bb32.png)
