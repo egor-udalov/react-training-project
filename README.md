@@ -1,3 +1,6 @@
+## Игра крестики-нолики
+![image](https://github.com/egor-udalov/react-training-project/assets/98544806/68764680-a1d1-435c-84da-61a93242903f)
+
 ## Коллекция фотографий
 ![photos130433](https://user-images.githubusercontent.com/98544806/198257263-e643755b-1bce-4afa-a781-ceb8bf80b40c.png)
 
