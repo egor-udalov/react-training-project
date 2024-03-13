@@ -7,6 +7,7 @@ function Sidebar() {
   return (
     <div className={Styles.Sidebar}>
         <ul>
+          <li><NavLink to="TicTacToe" className={setActive}>TicTacToe</NavLink></li>
           <li><NavLink to="Photos" className={setActive}>Photos</NavLink></li>
           <li><NavLink to="CurrencyConvertor" className={setActive}>CurrencyConvertor</NavLink></li>
           <li><NavLink to="Invitations" className={setActive}>Invitations</NavLink></li>
